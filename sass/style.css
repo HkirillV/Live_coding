@@ -1,10 +1,18 @@
-html {
-  font-size: 10px;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 11 |   background: $color-light;
+ *    |               ^^^^^^^^^^^^
+ *    '
+ *   base\_buttons.scss 11:15  @import
+ *   style.scss 3:9            root stylesheet */
 
-body {
-  font-size: 1.6rem;
-  font-family: "Open Sans", Verdana, sans-serif;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 11 \2502    background: $color-light;\d\a    \2502                ^^^^^^^^^^^^\a    \2575 \a   base\\_buttons.scss 11:15  @import\a   style.scss 3:9            root stylesheet";
 }
-
-/*# sourceMappingURL=style.css.map */
